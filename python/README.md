@@ -15,14 +15,14 @@
 - [x] Use `if`, `elif`, `else` to print “Fizz”, “Buzz”, or “FizzBuzz”
 
 #### 3. Temperature Converter
-- [ ] Take user input via `input()`
-- [ ] Convert between Celsius and Fahrenheit
-- [ ] Use functions to organize logic
+- [x] Take user input via `input()`
+- [x] Convert between Celsius and Fahrenheit
+- [x] Use functions to organize logic
 
 #### 4. Four Function Calculator
-- [ ] Take two numbers and an operator from user
-- [ ] Perform +, -, *, /
-- [ ] Add error handling with `try`/`except`
+- [x] Take two numbers and an operator from user
+- [x] Perform +, -, *, /
+- [x] Add error handling with `try`/`except`
 
 #### 5. Gradebook System
 - [ ] Use `dict` to store student names and grades

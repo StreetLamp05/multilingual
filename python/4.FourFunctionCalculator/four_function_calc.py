@@ -6,6 +6,7 @@ print("+, -, /, *")
 
 run = True
 while run:
+
     op = input("Enter operation (q to quit): ")
     match op:
         case '-':
@@ -26,11 +27,12 @@ while run:
         case '/':
             first = float(input("Enter the dividend: "))
             second = float(input("Enter the divisor: "))
-            print(first, "/",second,"=",(first / second))
+            try:
+                print(first, "/",second,"=",(first / second))
+            except ZeroDivisionError:
+                print("Cannot divide by zero")
             pass
         case 'q':
             run = False
             pass
-        case _:
-            print("Invalid choice")
-            pass
+
