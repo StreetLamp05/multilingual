@@ -11,8 +11,8 @@
 - [x] Add comments and experiment with Python syntax
 
 #### 2. FizzBuzz
-- [ ] Print numbers 1–100
-- [ ] Use `if`, `elif`, `else` to print “Fizz”, “Buzz”, or “FizzBuzz”
+- [x] Print numbers 1–100
+- [x] Use `if`, `elif`, `else` to print “Fizz”, “Buzz”, or “FizzBuzz”
 
 #### 3. Temperature Converter
 - [ ] Take user input via `input()`
