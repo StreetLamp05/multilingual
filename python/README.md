@@ -6,9 +6,9 @@
 ### Project Checklist
 
 #### 1. Hello World + Variables Playground
-- [ ] Print “Hello, World”
-- [ ] Declare and print variables (string, int, float, bool)
-- [ ] Add comments and experiment with Python syntax
+- [x] Print “Hello, World”
+- [x] Declare and print variables (string, int, float, bool)
+- [x] Add comments and experiment with Python syntax
 
 #### 2. FizzBuzz
 - [ ] Print numbers 1–100
