@@ -1,0 +1,4 @@
+Summary for: input.txt
+Number of lines: 6
+Number of words: 30
+Number of characters: 174

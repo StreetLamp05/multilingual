@@ -1,0 +1,6 @@
+this is a sample input file to be read by guess_rand_num.py
+
+the number of lines, words, and characters will be printed to console and written in an output.txt file
+
+
+yippee!

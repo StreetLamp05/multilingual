@@ -40,14 +40,14 @@
 - [x] Use string methods or `re` (regex) module
 
 #### 8. Guess the Number Game
-- [ ] Use `random.randint()` to generate number
-- [ ] Get user input and give feedback
-- [ ] Track number of attempts
+- [x] Use `random.randint()` to generate number
+- [x] Get user input and give feedback
+- [x] Track number of attempts
 
 #### 9. File Reader Summary
-- [ ] Open and read a `.txt` file
-- [ ] Print number of lines, words, and characters
-- [ ] Handle file exceptions with `try`/`except`
+- [x] Open and read a `.txt` file
+- [x] Print number of lines, words, and characters
+- [x] Handle file exceptions with `try`/`except`
 
 #### 10. Timer/Stopwatch
 - [ ] Use `time` module to track seconds
