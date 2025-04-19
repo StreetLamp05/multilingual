@@ -25,14 +25,14 @@
 - [x] Add error handling with `try`/`except`
 
 #### 5. Gradebook System
-- [ ] Use `dict` to store student names and grades
-- [ ] Calculate and print average grades
-- [ ] Iterate with `for` loops
+- [x] Use `dict` to store student names and grades
+- [x] Calculate and print average grades
+- [x] Iterate with `for` loops
 
 #### 6. Todo List App (Console-based)
-- [ ] Add a task to a list
-- [ ] Mark as done / delete a task
-- [ ] Use `while` loop to manage program flow
+- [x] Add a task to a list
+- [x] Mark as done / delete a task
+- [x] Use `while` loop to manage program flow
 
 #### 7. Password Strength Checker
 - [ ] Input a password
