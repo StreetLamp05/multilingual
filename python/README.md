@@ -35,9 +35,9 @@
 - [x] Use `while` loop to manage program flow
 
 #### 7. Password Strength Checker
-- [ ] Input a password
-- [ ] Check for length, numbers, uppercase/lowercase, symbols
-- [ ] Use string methods or `re` (regex) module
+- [x] Input a password
+- [x] Check for length, numbers, uppercase/lowercase, symbols
+- [x] Use string methods or `re` (regex) module
 
 #### 8. Guess the Number Game
 - [ ] Use `random.randint()` to generate number
