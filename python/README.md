@@ -57,8 +57,8 @@
 
 ### 12. Data Structure Implementations
 
-- [ ] Dynamic Array (use built-in `array`, implement resizing manually)
-- [ ] Singly Linked List (class-based)
+- [x] Dynamic Array (N/A)
+- [x] Singly Linked List (class-based)
 - [ ] Doubly Linked List
 - [ ] Stack (list or linked list)
 - [ ] Queue (list or `collections.deque`)
