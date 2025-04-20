@@ -50,8 +50,8 @@
 - [x] Handle file exceptions with `try`/`except`
 
 #### 10. Timer/Stopwatch
-- [ ] Use `time` module to track seconds
-- [ ] Implement countdown or stopwatch mode
+- [x] Use `time` module to track seconds
+- [x] Implement countdown or stopwatch mode
 
 ---
 
