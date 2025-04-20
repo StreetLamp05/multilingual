@@ -55,16 +55,9 @@
 
 ---
 
-### 11. Mini LeetCode Starter Problems
-- [ ] Reverse a string using slicing or loop
-- [ ] Find max in a list
-- [ ] Check if a number is prime
-
----
-
 ### 12. Data Structure Implementations
 
-- [ ] Dynamic Array (use built-in `list`, implement resizing manually)
+- [ ] Dynamic Array (use built-in `array`, implement resizing manually)
 - [ ] Singly Linked List (class-based)
 - [ ] Doubly Linked List
 - [ ] Stack (list or linked list)
