@@ -59,7 +59,7 @@
 
 - [x] Dynamic Array (N/A)
 - [x] Singly Linked List (class-based)
-- [ ] Doubly Linked List
+- [x] Doubly Linked List
 - [ ] Stack (list or linked list)
 - [ ] Queue (list or `collections.deque`)
 - [ ] Deque (implement with `deque`)
