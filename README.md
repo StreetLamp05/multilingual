@@ -73,11 +73,10 @@
 
 ---
 
-### 11. Mini LeetCode Starter Project
-- **Project**: Implement 3 classic problems:  
-  1. Reverse a string  
-  2. Find max in array  
-  3. Check if a number is prime
+### 11. removed...
+
+ 
+     
 ### **12. Data structure practice:**
 Implement the following:
   1. Dyanmic array - resizing
