@@ -119,6 +119,7 @@ class BinarySearchTree:
     def inorder(self) -> list:
         """
         Returns a list of the tree in inorder traversal.
+        Left, Root, Right
         Going to implement in 3 steps:
         1. Visit left child (if exists)
          - recursively call inorder to left subtree
@@ -131,7 +132,6 @@ class BinarySearchTree:
             if not node:
                 return[]
             return _inorder(node.left) + [node.value] + _inorder(node.right)
-
         return _inorder(self.root)
 
 
@@ -139,15 +139,36 @@ class BinarySearchTree:
     def preorder(self) -> list:
         """
         Returns a list of the tree in preorder traversal.
+        Root, Left, Right
+        Going to implement in 3 steps:
+        1. Record Current Node's value
+        2. Visit left child (if exists)
+        3. Visit right child (if exists)
         :return: list The preorder traversal.
         """
+        def _preorder(node):
+            if not node:
+                return []
+            return [node.value] + _preorder(node.left) + _preorder(node.right)
+        return _preorder(self.root)
 
-        return
+
     def postorder(self) -> list:
         """
         Returns a list of the tree in postorder traversal.
+        Left, Right, Root
+        Going to implement in 3 steps:
+        Visit left child (if exists)
+        Visit right child (if exists)
+        Record current Node's value
         :return: list The postorder traversal.
         """
+        def _postorder(node):
+            if not node:
+                return []
+            return _postorder(node.left) + _postorder(node.right) + [node.value]
+        return _postorder(self.root)
+
 
         return
     def min(self):
@@ -221,7 +242,7 @@ class BinarySearchTree:
 
     def print_tree(self, node=None, level=0, prefix="Root: "):
         """
-        Recursively prints the tree sideways for visualization.
+        Recursively prints the tree sideways for visualization (this is from chatgpt lol)
         :param node: The starting node (default is self.root)
         :param level: Used for indentation based on depth
         :param prefix: Label for the current node
@@ -233,3 +254,10 @@ class BinarySearchTree:
         print("     " * level + prefix + str(node.value))
         if node.left:
             self.print_tree(node.left, level + 1, "\\---- ")
+
+if __name__ == '__main__':
+    tree = BinarySearchTree()
+    for val in [5, 3, 2, 1, 4, 7, 6, 9, 8, 10]:
+        tree.insert(val)
+
+    print(tree.preorder())
