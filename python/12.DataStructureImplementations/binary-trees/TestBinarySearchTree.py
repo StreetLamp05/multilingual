@@ -1,7 +1,10 @@
 import unittest
-from node import Node
-from binary_search_tree import BinarySearchTree  # Assuming your code is saved in bst.py
+from binary_search_tree import BinarySearchTree
 
+
+"""
+Testing skeleton code from ChatGPT
+"""
 class TestBinarySearchTree(unittest.TestCase):
     def setUp(self):
         self.tree = BinarySearchTree()

@@ -11,14 +11,15 @@ class BinarySearchTree:
         """
         Insert a node into a BST, maintaining sorted order.
         :param value: The value to insert.
-        :return: None
+        :return: The inserted node (needed for subclass implementation).
         """
         if self.root is None:
             self.root = Node(value)
             self.size += 1
+            return self.root
         else:
-            self.__recursive_insert(self.root, value)
-        return
+            return self.__recursive_insert(self.root, value)
+
     def __recursive_insert(self, node, value):
         """
         Recursively insert a node into a BST. Follows no duplicates rule
@@ -57,6 +58,7 @@ class BinarySearchTree:
         if not to_delete:
             raise Exception(f"Value {value} not found.")
         self._delete(to_delete)
+        self.size -= 1
         pass
 
     def _delete(self, node):
