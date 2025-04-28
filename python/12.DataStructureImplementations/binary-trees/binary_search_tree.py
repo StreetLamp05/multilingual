@@ -1,48 +1,57 @@
 from node import Node
 from typing import Optional
-import unittest
+
 
 
 class BinarySearchTree:
     def __init__(self):
         self.root = None
         self.size = 0
-    def insert(self, value) -> None:
+    def insert(self, value) -> Node | None:
         """
         Insert a node into a BST, maintaining sorted order.
         :param value: The value to insert.
         :return: The inserted node (needed for subclass implementation).
         """
         if self.root is None:
-            self.root = Node(value)
+            self.root = self._create_node(value)
             self.size += 1
             return self.root
         else:
-            return self.__recursive_insert(self.root, value)
+            return self._recursive_insert(self.root, value)
 
-    def __recursive_insert(self, node, value):
+
+    def _create_node(self, value) -> Node:
+        return Node(value)
+
+
+    def _recursive_insert(self, node, value):
         """
         Recursively insert a node into a BST. Follows no duplicates rule
         :param node: The current node in the recursive traversal.
         :param value: The value to insert into the tree.
         :return: Node: The updated node reference after the insertion.
         """
-        new_node = Node(value)
-        if value < node.value: # look left
+        if value < node.value:
             if node.left:
-                self.__recursive_insert(node.left, value)
+                return self._recursive_insert(node.left, value)
             else:
+                new_node = self._create_node(value)
                 node.left = new_node
-                new_node.parent= node
-
-        elif value > node.value: # look right
+                new_node.parent = node
+                return new_node
+        elif value > node.value:
             if node.right:
-                self.__recursive_insert(node.right, value)
+                return self._recursive_insert(node.right, value)
             else:
+                new_node = self._create_node(value)
                 node.right = new_node
-                new_node.parent= node
-        elif value == node.value: # ignore (no duplicates rule)
-            return
+                new_node.parent = node
+                return new_node
+        else: # duplicate
+            return None
+
+
 
     def delete(self, value) -> None:
         """
@@ -66,6 +75,7 @@ class BinarySearchTree:
         if node.left is None and node.right is None:
             if node == self.root: # delete root
                 self.root = None
+                node.parent = None
             else:
                 parent = node.parent
                 if parent.left == node:
